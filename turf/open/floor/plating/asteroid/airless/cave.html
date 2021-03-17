@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="../../../../../../" />
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>&#x2F;turf&#x2F;open&#x2F;floor&#x2F;plating&#x2F;asteroid&#x2F;airless&#x2F;cave - &#x2F;tg&#x2F; Station 13</title>
+</head>
+<body>
+<header>
+    <a href="index.html">&#x2F;tg&#x2F; Station 13</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="turf/open/floor/plating/asteroid/airless/cave.html#var">Var Details</a> - <a href="turf/open/floor/plating/asteroid/airless/cave.html#proc">Proc Details</a></header>
+<main>
+<h1>cave <aside>/<a href="turf.html">turf</a>/<a href="turf/open.html">open</a>/<a href="turf/open/floor/plating/asteroid.html">floor/plating/asteroid</a>/<a href="turf/open/floor/plating/asteroid/airless/cave.html">airless/cave</a></aside>
+        
+    
+            <a href="https://github.com/Citadel-Station-13/Citadel-Station-13/blob/f3fb22a2ab0f6a0fb2d34b97042700533ef0a3ca/code/game/turfs/simulated/floor/plating/asteroid.dm#L143">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;simulated&#x2F;floor&#x2F;plating&#x2F;asteroid.dm 143"/></a></h1>
+
+<table class="summary" cellspacing="0"><tr><td colspan="2"><h2>Vars</h2></td></tr>
+            <tr><th><a href="turf/open/floor/plating/asteroid/airless/cave.html#var/backward_cave_dir">backward_cave_dir</a></th><td>Backwards cave direction for tracking</td></tr>
+            <tr><th><a href="turf/open/floor/plating/asteroid/airless/cave.html#var/choose_turf_type">choose_turf_type</a></th><td>Turf type to choose when spawning in tunnel at 1% chance, weighted list</td></tr>
+            <tr><th><a href="turf/open/floor/plating/asteroid/airless/cave.html#var/data_having_type">data_having_type</a></th><td>The non-cave creating type</td></tr>
+            <tr><th><a href="turf/open/floor/plating/asteroid/airless/cave.html#var/flora_spawn_list">flora_spawn_list</a></th><td>Flora that can spawn in the tunnel, weighted list</td></tr>
+            <tr><th><a href="turf/open/floor/plating/asteroid/airless/cave.html#var/forward_cave_dir">forward_cave_dir</a></th><td>Cave direction to move</td></tr>
+            <tr><th><a href="turf/open/floor/plating/asteroid/airless/cave.html#var/going_backwards">going_backwards</a></th><td>If the tunnel is moving backwards</td></tr>
+            <tr><th><a href="turf/open/floor/plating/asteroid/airless/cave.html#var/has_data">has_data</a></th><td>If this is a cave creating type</td></tr>
+            <tr><th><a href="turf/open/floor/plating/asteroid/airless/cave.html#var/length">length</a></th><td>Length of the tunnel</td></tr>
+            <tr><th><a href="turf/open/floor/plating/asteroid/airless/cave.html#var/megafauna_spawn_list">megafauna_spawn_list</a></th><td>Megafauna that can spawn in the tunnel, weighted list</td></tr>
+            <tr><th><a href="turf/open/floor/plating/asteroid/airless/cave.html#var/mob_spawn_list">mob_spawn_list</a></th><td>Mobs that can spawn in the tunnel, weighted list</td></tr>
+            <tr><th><a href="turf/open/floor/plating/asteroid/airless/cave.html#var/pick_tunnel_width">pick_tunnel_width</a></th><td>Option tunnel width, wegihted list</td></tr>
+            <tr><th><a href="turf/open/floor/plating/asteroid/airless/cave.html#var/sanity">sanity</a></th><td>if the tunnel should keep being created</td></tr><tr><td colspan="2"><h2>Procs</h2></td></tr>
+            <tr><th><a href="turf/open/floor/plating/asteroid/airless/cave.html#proc/SpawnFloor">SpawnFloor</a></th><td>Spawns the floor of the tunnel and any type of structure or mob it can have</td></tr>
+            <tr><th><a href="turf/open/floor/plating/asteroid/airless/cave.html#proc/SpawnFlora">SpawnFlora</a></th><td>Spawns a random flora in the tunnel, can spawn clumps of them.</td></tr>
+            <tr><th><a href="turf/open/floor/plating/asteroid/airless/cave.html#proc/SpawnMonster">SpawnMonster</a></th><td>Spawns a random mob or megafauna in the tunnel</td></tr>
+            <tr><th><a href="turf/open/floor/plating/asteroid/airless/cave.html#proc/get_cave_data">get_cave_data</a></th><td>Sets the tunnel length and direction</td></tr>
+            <tr><th><a href="turf/open/floor/plating/asteroid/airless/cave.html#proc/make_tunnel">make_tunnel</a></th><td>Makes the tunnel and spawns things inside of it</td></tr>
+            <tr><th><a href="turf/open/floor/plating/asteroid/airless/cave.html#proc/produce_tunnel_from_data">produce_tunnel_from_data</a></th><td>Gets the tunnel length and direction then makes the tunnel</td></tr></table>
+    <h2 id="var">Var Details</h2><h3 id="var/backward_cave_dir"><aside class="declaration">var </aside>backward_cave_dir
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Citadel-Station-13/Citadel-Station-13/blob/f3fb22a2ab0f6a0fb2d34b97042700533ef0a3ca/code/game/turfs/simulated/floor/plating/asteroid.dm#L161">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;simulated&#x2F;floor&#x2F;plating&#x2F;asteroid.dm 161"/></a></h3>
+        <p>Backwards cave direction for tracking</p><h3 id="var/choose_turf_type"><aside class="declaration">var </aside>choose_turf_type
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/Citadel-Station-13/Citadel-Station-13/blob/f3fb22a2ab0f6a0fb2d34b97042700533ef0a3ca/code/game/turfs/simulated/floor/plating/asteroid.dm#L155">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;simulated&#x2F;floor&#x2F;plating&#x2F;asteroid.dm 155"/></a></h3>
+        <p>Turf type to choose when spawning in tunnel at 1% chance, weighted list</p><h3 id="var/data_having_type"><aside class="declaration">var </aside>data_having_type
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Citadel-Station-13/Citadel-Station-13/blob/f3fb22a2ab0f6a0fb2d34b97042700533ef0a3ca/code/game/turfs/simulated/floor/plating/asteroid.dm#L167">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;simulated&#x2F;floor&#x2F;plating&#x2F;asteroid.dm 167"/></a></h3>
+        <p>The non-cave creating type</p><h3 id="var/flora_spawn_list"><aside class="declaration">var </aside>flora_spawn_list
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/Citadel-Station-13/Citadel-Station-13/blob/f3fb22a2ab0f6a0fb2d34b97042700533ef0a3ca/code/game/turfs/simulated/floor/plating/asteroid.dm#L151">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;simulated&#x2F;floor&#x2F;plating&#x2F;asteroid.dm 151"/></a></h3>
+        <p>Flora that can spawn in the tunnel, weighted list</p><h3 id="var/forward_cave_dir"><aside class="declaration">var </aside>forward_cave_dir
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Citadel-Station-13/Citadel-Station-13/blob/f3fb22a2ab0f6a0fb2d34b97042700533ef0a3ca/code/game/turfs/simulated/floor/plating/asteroid.dm#L159">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;simulated&#x2F;floor&#x2F;plating&#x2F;asteroid.dm 159"/></a></h3>
+        <p>Cave direction to move</p><h3 id="var/going_backwards"><aside class="declaration">var </aside>going_backwards
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Citadel-Station-13/Citadel-Station-13/blob/f3fb22a2ab0f6a0fb2d34b97042700533ef0a3ca/code/game/turfs/simulated/floor/plating/asteroid.dm#L163">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;simulated&#x2F;floor&#x2F;plating&#x2F;asteroid.dm 163"/></a></h3>
+        <p>If the tunnel is moving backwards</p><h3 id="var/has_data"><aside class="declaration">var </aside>has_data
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Citadel-Station-13/Citadel-Station-13/blob/f3fb22a2ab0f6a0fb2d34b97042700533ef0a3ca/code/game/turfs/simulated/floor/plating/asteroid.dm#L165">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;simulated&#x2F;floor&#x2F;plating&#x2F;asteroid.dm 165"/></a></h3>
+        <p>If this is a cave creating type</p><h3 id="var/length"><aside class="declaration">var </aside>length
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Citadel-Station-13/Citadel-Station-13/blob/f3fb22a2ab0f6a0fb2d34b97042700533ef0a3ca/code/game/turfs/simulated/floor/plating/asteroid.dm#L145">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;simulated&#x2F;floor&#x2F;plating&#x2F;asteroid.dm 145"/></a></h3>
+        <p>Length of the tunnel</p><h3 id="var/megafauna_spawn_list"><aside class="declaration">var </aside>megafauna_spawn_list
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/Citadel-Station-13/Citadel-Station-13/blob/f3fb22a2ab0f6a0fb2d34b97042700533ef0a3ca/code/game/turfs/simulated/floor/plating/asteroid.dm#L149">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;simulated&#x2F;floor&#x2F;plating&#x2F;asteroid.dm 149"/></a></h3>
+        <p>Megafauna that can spawn in the tunnel, weighted list</p><h3 id="var/mob_spawn_list"><aside class="declaration">var </aside>mob_spawn_list
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/Citadel-Station-13/Citadel-Station-13/blob/f3fb22a2ab0f6a0fb2d34b97042700533ef0a3ca/code/game/turfs/simulated/floor/plating/asteroid.dm#L147">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;simulated&#x2F;floor&#x2F;plating&#x2F;asteroid.dm 147"/></a></h3>
+        <p>Mobs that can spawn in the tunnel, weighted list</p><h3 id="var/pick_tunnel_width"><aside class="declaration">var </aside>pick_tunnel_width
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/Citadel-Station-13/Citadel-Station-13/blob/f3fb22a2ab0f6a0fb2d34b97042700533ef0a3ca/code/game/turfs/simulated/floor/plating/asteroid.dm#L169">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;simulated&#x2F;floor&#x2F;plating&#x2F;asteroid.dm 169"/></a></h3>
+        <p>Option tunnel width, wegihted list</p><h3 id="var/sanity"><aside class="declaration">var </aside>sanity
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Citadel-Station-13/Citadel-Station-13/blob/f3fb22a2ab0f6a0fb2d34b97042700533ef0a3ca/code/game/turfs/simulated/floor/plating/asteroid.dm#L157">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;simulated&#x2F;floor&#x2F;plating&#x2F;asteroid.dm 157"/></a></h3>
+        <p>if the tunnel should keep being created</p><h2 id="proc">Proc Details</h2><h3 id="proc/SpawnFloor"><aside class="declaration">proc </aside>SpawnFloor<aside>(/<a href="turf.html">turf</a>/T) 
+        
+    
+            <a href="https://github.com/Citadel-Station-13/Citadel-Station-13/blob/f3fb22a2ab0f6a0fb2d34b97042700533ef0a3ca/code/game/turfs/simulated/floor/plating/asteroid.dm#L328">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;simulated&#x2F;floor&#x2F;plating&#x2F;asteroid.dm 328"/></a></aside>
+        </h3>
+        <p>Spawns the floor of the tunnel and any type of structure or mob it can have</p><h3 id="proc/SpawnFlora"><aside class="declaration">proc </aside>SpawnFlora<aside>(/<a href="turf.html">turf</a>/T) 
+        
+    
+            <a href="https://github.com/Citadel-Station-13/Citadel-Station-13/blob/f3fb22a2ab0f6a0fb2d34b97042700533ef0a3ca/code/game/turfs/simulated/floor/plating/asteroid.dm#L390">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;simulated&#x2F;floor&#x2F;plating&#x2F;asteroid.dm 390"/></a></aside>
+        </h3>
+        <p>Spawns a random flora in the tunnel, can spawn clumps of them.</p><h3 id="proc/SpawnMonster"><aside class="declaration">proc </aside>SpawnMonster<aside>(/<a href="turf.html">turf</a>/T) 
+        
+    
+            <a href="https://github.com/Citadel-Station-13/Citadel-Station-13/blob/f3fb22a2ab0f6a0fb2d34b97042700533ef0a3ca/code/game/turfs/simulated/floor/plating/asteroid.dm#L355">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;simulated&#x2F;floor&#x2F;plating&#x2F;asteroid.dm 355"/></a></aside>
+        </h3>
+        <p>Spawns a random mob or megafauna in the tunnel</p><h3 id="proc/get_cave_data"><aside class="declaration">proc </aside>get_cave_data<aside>(set_length, exclude_dir) 
+        
+    
+            <a href="https://github.com/Citadel-Station-13/Citadel-Station-13/blob/f3fb22a2ab0f6a0fb2d34b97042700533ef0a3ca/code/game/turfs/simulated/floor/plating/asteroid.dm#L243">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;simulated&#x2F;floor&#x2F;plating&#x2F;asteroid.dm 243"/></a></aside>
+        </h3>
+        <p>Sets the tunnel length and direction</p><h3 id="proc/make_tunnel"><aside class="declaration">proc </aside>make_tunnel<aside>(dir) 
+        
+    
+            <a href="https://github.com/Citadel-Station-13/Citadel-Station-13/blob/f3fb22a2ab0f6a0fb2d34b97042700533ef0a3ca/code/game/turfs/simulated/floor/plating/asteroid.dm#L273">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;simulated&#x2F;floor&#x2F;plating&#x2F;asteroid.dm 273"/></a></aside>
+        </h3>
+        <p>Makes the tunnel and spawns things inside of it</p>
+<p>Picks a tunnel width for the tunnel and then starts spawning turfs in the direction it moves in
+Can randomly change directions of the tunnel, stops if it hits the edge of the map, or a no tunnel area
+Can randomly make new tunnels out of itself</p><h3 id="proc/produce_tunnel_from_data"><aside class="declaration">proc </aside>produce_tunnel_from_data<aside>(tunnel_length, excluded_dir) 
+        
+    
+            <a href="https://github.com/Citadel-Station-13/Citadel-Station-13/blob/f3fb22a2ab0f6a0fb2d34b97042700533ef0a3ca/code/game/turfs/simulated/floor/plating/asteroid.dm#L256">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;simulated&#x2F;floor&#x2F;plating&#x2F;asteroid.dm 256"/></a></aside>
+        </h3>
+        <p>Gets the tunnel length and direction then makes the tunnel</p></main>
+<footer>
+    tgstation.dme
+    <a href="https://github.com/Citadel-Station-13/Citadel-Station-13/tree/f3fb22a2ab0f6a0fb2d34b97042700533ef0a3ca">f3fb22a</a>
+        (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.3.0</a></footer>
+</body>
+</html>
